@@ -1,0 +1,15 @@
+query postsData {
+	posts {
+		title
+		slug
+		date
+		content
+		tags
+		coverImage {
+			url
+		}
+		authors {
+			name
+		}
+	}
+}

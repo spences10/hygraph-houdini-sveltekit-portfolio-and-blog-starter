@@ -1,0 +1,15 @@
+query postData($slug: String!) {
+	post(where: { slug: $slug }) {
+		title
+		slug
+		date
+		content
+		tags
+		coverImage {
+			url
+		}
+		authors {
+			name
+		}
+	}
+}
