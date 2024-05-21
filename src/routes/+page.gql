@@ -1,0 +1,22 @@
+query indexPageData {
+	authors {
+		name
+		intro
+		bio
+		slug
+		picture {
+			url
+		}
+	}
+	projects {
+		name
+		slug
+		description
+		tags
+		demo
+		sourceCode
+		image {
+			url
+		}
+	}
+}

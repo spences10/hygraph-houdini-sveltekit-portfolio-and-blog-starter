@@ -1,0 +1,11 @@
+query aboutPageData {
+	authors {
+		name
+		intro
+		bio
+		slug
+		picture {
+			url
+		}
+	}
+}

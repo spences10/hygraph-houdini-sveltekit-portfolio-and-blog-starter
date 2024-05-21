@@ -1,0 +1,28 @@
+query layoutData {
+	projectMetadatas {
+		name
+		siteUrl
+		description
+		openGraphDefaultImage {
+			url(
+				transformation: {
+					image: { resize: { width: 1200, height: 630, fit: clip } }
+				}
+			)
+		}
+	}
+	socials {
+		twitterUrl
+		youTubeUrl
+		facebookUrl
+	}
+	authors {
+		name
+		intro
+		bio
+		slug
+		picture {
+			url
+		}
+	}
+}
