@@ -1,44 +1,45 @@
-# create-svelte
+# Hygraph SvelteKit Portfolio and Blog Starter
 
-Everything you need to build a Svelte project, powered by
-[`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+> Minimalist Developer Portfolio and Blog built with SvelteKit,
+> Tailwind, daisyUI, and deployed to Vercel.
 
-## Creating a project
+**Check out the [demo].**
 
-If you're seeing this, you've probably already done this step.
-Congrats!
+**Deploy your own** on Vercel, click the deploy button and remember to
+add in the Content API from _your_ Hygraph project template:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/spences10/hygraph-houdini-sveltekit-portfolio-and-blog-starter&env=PUBLIC_GRAPHQL_API)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## The stack
 
-## Developing
+This is an example project generated with the Hygraph Developer
+Portfolio and Blog starter.
 
-Once you've created a project and installed dependencies with
-`npm install` (or `pnpm install` or `yarn`), start a development
-server:
+- **[Hygraph](https://hygraph.com)**: Manage projects and blog posts.
+- **[SvelteKit](https://kit.svelte.dev/)**: A powerful framework that
+  lets us query data and use endpoints for server side data.
+- **[Vercel](https://www.vercel.com/)**: For an intuitive Git based
+  workflow with seamless publishing.
 
-```bash
-npm run dev
+## How to use
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+⚠TODO!
 
-## Building
-
-To create a production version of your app:
+Rename the `sample.env` file to `.env` and add your own Content API
+endpoint.
 
 ```bash
-npm run build
+mv sample.env .env
 ```
 
-You can preview the production build with `npm run preview`.
+Install dependencies and run local dev server:
 
-> To deploy your app, you may need to install an
-> [adapter](https://kit.svelte.dev/docs/adapters) for your target
-> environment.
+```bash
+pnpm i
+pnpm run dev
+```
+
+<!-- Links -->
+
+[demo]:
+	https://sveltekit-portfolio-and-blog-starter-with-graphcms.vercel.app/
