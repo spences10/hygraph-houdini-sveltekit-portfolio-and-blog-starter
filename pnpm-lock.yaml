@@ -51,8 +51,8 @@ importers:
         specifier: ^2.39.0
         version: 2.39.0(eslint@9.3.0)(svelte@5.0.0-next.137)
       houdini:
-        specifier: ^0.0.0-20240519095848
-        version: 0.0.0-20240519095848
+        specifier: ^0.20.0
+        version: 0.20.4
       houdini-svelte:
         specifier: ^0.0.0-20240519095848
         version: 0.0.0-20240519095848(@sveltejs/vite-plugin-svelte@3.1.0(svelte@5.0.0-next.137)(vite@5.2.11(@types/node@20.12.12)))(@types/node@20.12.12)
@@ -392,6 +392,10 @@ packages:
   '@kamilkisiela/fast-url-parser@1.1.4':
     resolution: {integrity: sha512-gbkePEBupNydxCelHCESvFSFM8XPh1Zs/OAVRW/rKpEqPAl5PbOM90Si8mv9bvnR53uPD2s/FiRxdvSejpRJew==}
 
+  '@kitql/helper@0.5.0':
+    resolution: {integrity: sha512-qTDsv8qmbvSyZLb75hE9N4AnmZHtCi8JxgHYAj4dbgViEjs6HVYJKqHabGR7rZCAVQj7LwWu+cTfh52QhlNMcg==}
+    deprecated: It was renamed to @kitql/helpers, should be better!
+
   '@kitql/helpers@0.8.9':
     resolution: {integrity: sha512-uDBFBvCYUT4UaZZKv7gJejQvbrOp4YyI1S0Z92DPiMbyLq0DPDXz3Lt2ZqUZKlQrinBX+W1TO6w0RudEX6Q6WA==}
     engines: {node: ^16.14 || >=18}
@@ -563,6 +567,9 @@ packages:
 
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+
+  '@types/prompts@2.4.9':
+    resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
 
   '@types/pug@2.0.10':
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
@@ -1181,6 +1188,10 @@ packages:
     resolution: {integrity: sha512-DDuukFO6dYKQbm7NltYl2feTy4rsRcgDPF9rRN2AI2v6KmLAeiDG+kGaLOstT8Cs9D13XrHerRQTX2oftKJpNw==}
     hasBin: true
 
+  houdini@0.20.4:
+    resolution: {integrity: sha512-t1S4t596YaZUFLBxyjAYaaxBKEaeyOeYLL+3Etzwx+1FlY0of7taR0Veg0GesBe74ciznopri5ePDifnr5IBRQ==}
+    hasBin: true
+
   human-signals@3.0.1:
     resolution: {integrity: sha512-rQLskxnM/5OCldHo+wNXbpVgDn5A17CUoKX+7Sokwaknlq7CdSnphy0W39GU8dw59XiCXmFXDg4fRuckQRKewQ==}
     engines: {node: '>=12.20.0'}
@@ -1276,6 +1287,10 @@ packages:
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
+
+  kleur@3.0.3:
+    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
+    engines: {node: '>=6'}
 
   kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
@@ -1668,6 +1683,10 @@ packages:
   pretty-format@29.7.0:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+
+  prompts@2.4.2:
+    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
+    engines: {node: '>= 6'}
 
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
@@ -2368,6 +2387,8 @@ snapshots:
 
   '@kamilkisiela/fast-url-parser@1.1.4': {}
 
+  '@kitql/helper@0.5.0': {}
+
   '@kitql/helpers@0.8.9':
     dependencies:
       esm-env: 1.0.0
@@ -2541,6 +2562,11 @@ snapshots:
   '@types/node@20.12.12':
     dependencies:
       undici-types: 5.26.5
+
+  '@types/prompts@2.4.9':
+    dependencies:
+      '@types/node': 20.12.12
+      kleur: 3.0.3
 
   '@types/pug@2.0.10': {}
 
@@ -3290,6 +3316,30 @@ snapshots:
       recast: 0.23.7
       vite-plugin-watch-and-run: 1.7.0
 
+  houdini@0.20.4:
+    dependencies:
+      '@babel/parser': 7.24.5
+      '@graphql-tools/schema': 9.0.19(graphql@15.8.0)
+      '@kitql/helper': 0.5.0
+      '@types/estree': 1.0.5
+      '@types/fs-extra': 9.0.13
+      '@types/micromatch': 4.0.7
+      '@types/prompts': 2.4.9
+      ast-types: 0.16.1
+      commander: 9.5.0
+      estree-walker: 3.0.3
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      graphql: 15.8.0
+      memfs: 3.5.3
+      micromatch: 4.0.5
+      minimatch: 5.1.6
+      node-fetch: 3.3.2
+      npx-import: 1.1.4
+      prompts: 2.4.2
+      recast: 0.23.7
+      vite-plugin-watch-and-run: 1.7.0
+
   human-signals@3.0.1: {}
 
   human-signals@5.0.0: {}
@@ -3369,6 +3419,8 @@ snapshots:
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
+
+  kleur@3.0.3: {}
 
   kleur@4.1.5: {}
 
@@ -3658,6 +3710,11 @@ snapshots:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.3.1
+
+  prompts@2.4.2:
+    dependencies:
+      kleur: 3.0.3
+      sisteransi: 1.0.5
 
   punycode@2.3.1: {}
 
