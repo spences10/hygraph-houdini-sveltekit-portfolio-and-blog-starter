@@ -51,8 +51,8 @@ importers:
         specifier: ^2.39.0
         version: 2.39.0(eslint@9.3.0)(svelte@5.0.0-next.138)
       houdini:
-        specifier: ^0.0.0-20240519095848
-        version: 0.0.0-20240519095848
+        specifier: ^1.0.0
+        version: 1.2.47
       houdini-svelte:
         specifier: ^0.0.0-20240519095848
         version: 0.0.0-20240519095848(@sveltejs/vite-plugin-svelte@3.1.0(svelte@5.0.0-next.138)(vite@5.2.11(@types/node@20.12.12)))(@types/node@20.12.12)
@@ -1179,6 +1179,10 @@ packages:
 
   houdini@0.0.0-20240519095848:
     resolution: {integrity: sha512-DDuukFO6dYKQbm7NltYl2feTy4rsRcgDPF9rRN2AI2v6KmLAeiDG+kGaLOstT8Cs9D13XrHerRQTX2oftKJpNw==}
+    hasBin: true
+
+  houdini@1.2.47:
+    resolution: {integrity: sha512-GtOGv1UEclUSmxaN1YsYWlT/BGN+Y8ZgJq30D3C3bO/s8hA8A7JRjt8ryxKfugaHCFyEVswVstu6AhXWDqd7SQ==}
     hasBin: true
 
   human-signals@3.0.1:
@@ -3263,6 +3267,34 @@ snapshots:
       - terser
 
   houdini@0.0.0-20240519095848:
+    dependencies:
+      '@babel/parser': 7.24.5
+      '@clack/prompts': 0.6.3
+      '@graphql-tools/merge': 9.0.4(graphql@15.8.0)
+      '@graphql-tools/schema': 9.0.19(graphql@15.8.0)
+      '@kitql/helpers': 0.8.9
+      '@types/estree': 1.0.5
+      '@types/fs-extra': 9.0.13
+      '@types/micromatch': 4.0.7
+      '@ungap/structured-clone': 1.2.0
+      '@whatwg-node/server': 0.9.34
+      ast-types: 0.16.1
+      commander: 9.5.0
+      deepmerge: 4.3.1
+      estree-walker: 3.0.3
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      graphql: 15.8.0
+      graphql-yoga: 4.0.5(graphql@15.8.0)
+      memfs: 3.5.3
+      micromatch: 4.0.5
+      minimatch: 5.1.6
+      node-fetch: 3.3.2
+      npx-import: 1.1.4
+      recast: 0.23.7
+      vite-plugin-watch-and-run: 1.7.0
+
+  houdini@1.2.47:
     dependencies:
       '@babel/parser': 7.24.5
       '@clack/prompts': 0.6.3
