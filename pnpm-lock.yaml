@@ -54,8 +54,8 @@ importers:
         specifier: ^1.0.0
         version: 1.2.47
       houdini-svelte:
-        specifier: ^0.20.0
-        version: 0.20.4(@types/node@20.12.12)(graphql@15.8.0)
+        specifier: ^1.0.0
+        version: 1.2.47(@types/node@20.12.12)
       marked:
         specifier: ^12.0.2
         version: 12.0.2
@@ -528,10 +528,6 @@ packages:
   '@kamilkisiela/fast-url-parser@1.1.4':
     resolution: {integrity: sha512-gbkePEBupNydxCelHCESvFSFM8XPh1Zs/OAVRW/rKpEqPAl5PbOM90Si8mv9bvnR53uPD2s/FiRxdvSejpRJew==}
 
-  '@kitql/helper@0.5.0':
-    resolution: {integrity: sha512-qTDsv8qmbvSyZLb75hE9N4AnmZHtCi8JxgHYAj4dbgViEjs6HVYJKqHabGR7rZCAVQj7LwWu+cTfh52QhlNMcg==}
-    deprecated: It was renamed to @kitql/helpers, should be better!
-
   '@kitql/helpers@0.8.9':
     resolution: {integrity: sha512-uDBFBvCYUT4UaZZKv7gJejQvbrOp4YyI1S0Z92DPiMbyLq0DPDXz3Lt2ZqUZKlQrinBX+W1TO6w0RudEX6Q6WA==}
     engines: {node: ^16.14 || >=18}
@@ -729,9 +725,6 @@ packages:
 
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
-
-  '@types/prompts@2.4.9':
-    resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
 
   '@types/pug@2.0.10':
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
@@ -1312,10 +1305,12 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@8.1.0:
     resolution: {integrity: sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==}
     engines: {node: '>=12'}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   globals@14.0.0:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
@@ -1355,14 +1350,8 @@ packages:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
 
-  houdini-svelte@0.20.4:
-    resolution: {integrity: sha512-ntRwOQfGNjO/Xt45s5AonSE6COxXZHyVvU0k+JekiJMw0p61Fhz9FiDtE/Ox1QJHyWGF57d0FxBW+YX7fKlDAA==}
-    peerDependencies:
-      graphql: ^14.0.0 || ^15.0.0
-
-  houdini@0.20.4:
-    resolution: {integrity: sha512-t1S4t596YaZUFLBxyjAYaaxBKEaeyOeYLL+3Etzwx+1FlY0of7taR0Veg0GesBe74ciznopri5ePDifnr5IBRQ==}
-    hasBin: true
+  houdini-svelte@1.2.47:
+    resolution: {integrity: sha512-BEqXM1bgu1WjOF5jg0wml6a6WXu1m8zzh1Ld+SvLmHdvK5xZYWdXGkIIXeC/dQTvXHTDoxgxMHtsLEyzzakZEQ==}
 
   houdini@1.2.47:
     resolution: {integrity: sha512-GtOGv1UEclUSmxaN1YsYWlT/BGN+Y8ZgJq30D3C3bO/s8hA8A7JRjt8ryxKfugaHCFyEVswVstu6AhXWDqd7SQ==}
@@ -1464,10 +1453,6 @@ packages:
 
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
-
-  kleur@3.0.3:
-    resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
-    engines: {node: '>=6'}
 
   kleur@4.1.5:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
@@ -1865,10 +1850,6 @@ packages:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
-  prompts@2.4.2:
-    resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
-    engines: {node: '>= 6'}
-
   punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -1904,6 +1885,7 @@ packages:
 
   rimraf@2.7.1:
     resolution: {integrity: sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rollup@3.29.4:
@@ -2674,8 +2656,6 @@ snapshots:
 
   '@kamilkisiela/fast-url-parser@1.1.4': {}
 
-  '@kitql/helper@0.5.0': {}
-
   '@kitql/helpers@0.8.9':
     dependencies:
       esm-env: 1.0.0
@@ -2876,11 +2856,6 @@ snapshots:
   '@types/node@20.12.12':
     dependencies:
       undici-types: 5.26.5
-
-  '@types/prompts@2.4.9':
-    dependencies:
-      '@types/node': 20.12.12
-      kleur: 3.0.3
 
   '@types/pug@2.0.10': {}
 
@@ -3609,15 +3584,16 @@ snapshots:
     dependencies:
       function-bind: 1.1.2
 
-  houdini-svelte@0.20.4(@types/node@20.12.12)(graphql@15.8.0):
+  houdini-svelte@1.2.47(@types/node@20.12.12):
     dependencies:
-      '@kitql/helper': 0.5.0
+      '@kitql/helpers': 0.8.9
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3(@types/node@20.12.12))
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.8.0
-      houdini: 0.20.4
+      houdini: 1.2.47
       recast: 0.23.7
+      rollup: 3.29.4
       svelte: 3.59.2
       vite: 4.5.3(@types/node@20.12.12)
     transitivePeerDependencies:
@@ -3629,30 +3605,6 @@ snapshots:
       - sugarss
       - supports-color
       - terser
-
-  houdini@0.20.4:
-    dependencies:
-      '@babel/parser': 7.24.5
-      '@graphql-tools/schema': 9.0.19(graphql@15.8.0)
-      '@kitql/helper': 0.5.0
-      '@types/estree': 1.0.5
-      '@types/fs-extra': 9.0.13
-      '@types/micromatch': 4.0.7
-      '@types/prompts': 2.4.9
-      ast-types: 0.16.1
-      commander: 9.5.0
-      estree-walker: 3.0.3
-      fs-extra: 10.1.0
-      glob: 8.1.0
-      graphql: 15.8.0
-      memfs: 3.5.3
-      micromatch: 4.0.5
-      minimatch: 5.1.6
-      node-fetch: 3.3.2
-      npx-import: 1.1.4
-      prompts: 2.4.2
-      recast: 0.23.7
-      vite-plugin-watch-and-run: 1.7.0
 
   houdini@1.2.47:
     dependencies:
@@ -3761,8 +3713,6 @@ snapshots:
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
-
-  kleur@3.0.3: {}
 
   kleur@4.1.5: {}
 
@@ -4054,11 +4004,6 @@ snapshots:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.3.1
-
-  prompts@2.4.2:
-    dependencies:
-      kleur: 3.0.3
-      sisteransi: 1.0.5
 
   punycode@2.3.1: {}
 
