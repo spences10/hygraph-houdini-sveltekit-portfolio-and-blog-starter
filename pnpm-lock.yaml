@@ -55,7 +55,7 @@ devDependencies:
     version: 1.2.50
   marked:
     specifier: ^13.0.0
-    version: 13.0.2
+    version: 13.0.3
   postcss:
     specifier: ^8.4.38
     version: 8.4.40
@@ -2631,8 +2631,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.5.0
     dev: true
 
-  /marked@13.0.2:
-    resolution: {integrity: sha512-J6CPjP8pS5sgrRqxVRvkCIkZ6MFdRIjDkwUwgJ9nL2fbmM6qGQeB2C16hi8Cc9BOzj6xXzy0jyi0iPIfnMHYzA==}
+  /marked@13.0.3:
+    resolution: {integrity: sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==}
     engines: {node: '>= 18'}
     hasBin: true
     dev: true
