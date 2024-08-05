@@ -49,7 +49,7 @@ devDependencies:
     version: 2.43.0(eslint@9.8.0)(svelte@5.0.0-next.206)
   houdini:
     specifier: ^1.2.47
-    version: 1.2.52
+    version: 1.2.54
   houdini-svelte:
     specifier: ^1.2.47
     version: 1.2.50
@@ -1152,7 +1152,7 @@ packages:
   /@types/fs-extra@9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 22.0.2
+      '@types/node': 22.1.0
     dev: true
 
   /@types/json-schema@7.0.15:
@@ -1165,10 +1165,10 @@ packages:
       '@types/braces': 3.0.4
     dev: true
 
-  /@types/node@22.0.2:
-    resolution: {integrity: sha512-yPL6DyFwY5PiMVEwymNeqUTKsDczQBJ/5T7W/46RwLU/VH+AA8aT5TZkvBviLKLbbm0hlfftEkGrNzfRk/fofQ==}
+  /@types/node@22.1.0:
+    resolution: {integrity: sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==}
     dependencies:
-      undici-types: 6.11.1
+      undici-types: 6.13.0
     dev: true
 
   /@types/pug@2.0.10:
@@ -2369,7 +2369,7 @@ packages:
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.52
+      houdini: 1.2.54
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -2385,8 +2385,8 @@ packages:
       - terser
     dev: true
 
-  /houdini@1.2.52:
-    resolution: {integrity: sha512-g3BXNx1VnijBuFLPyhzOcg5waf9GxwrFXIl2/jivLz2RP0B5gTG1FcQMGZqbNqcf7rKNHkqdOMxeg7t7QvubQw==}
+  /houdini@1.2.54:
+    resolution: {integrity: sha512-4162GdFb/nNpzQBQnpEP/Zn+4I2wUyXsjwPM0qamFKkkD656YU6kXM1MjqGY4d+USiOqLCXW+CXEVts7Rk+hYA==}
     hasBin: true
     dependencies:
       '@babel/parser': 7.25.3
@@ -3672,8 +3672,8 @@ packages:
     hasBin: true
     dev: true
 
-  /undici-types@6.11.1:
-    resolution: {integrity: sha512-mIDEX2ek50x0OlRgxryxsenE5XaQD4on5U2inY7RApK3SOJpofyw7uW2AyfMKkhAxXIceo2DeWGVGwyvng1GNQ==}
+  /undici-types@6.13.0:
+    resolution: {integrity: sha512-xtFJHudx8S2DSoujjMd1WeWvn7KKWFRESZTMeL1RptAYERu29D6jphMjjY+vn96jvN3kVPDNxU/E13VTaXj6jg==}
     dev: true
 
   /undici@5.28.4:
