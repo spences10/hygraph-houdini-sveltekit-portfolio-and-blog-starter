@@ -52,7 +52,7 @@ devDependencies:
     version: 1.2.52
   houdini-svelte:
     specifier: ^1.2.47
-    version: 1.2.50
+    version: 1.2.54
   marked:
     specifier: ^13.0.0
     version: 13.0.3
@@ -1005,7 +1005,7 @@ packages:
       magic-string: 0.30.11
       mrmime: 1.0.1
       sade: 1.8.1
-      set-cookie-parser: 2.6.0
+      set-cookie-parser: 2.7.0
       sirv: 2.0.4
       svelte: 3.59.2
       tiny-glob: 0.2.9
@@ -2361,15 +2361,15 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /houdini-svelte@1.2.50:
-    resolution: {integrity: sha512-JIcHatC/3si+5KMBtv357VAUGtfZRuAeiF2rtt9hVsdmu6p7kOmvtiuUzXJGcODD0106lpeQwGjNXnvxOhSfTA==}
+  /houdini-svelte@1.2.54:
+    resolution: {integrity: sha512-+kMCXlaWz2NSkE2z1HzE3byNI1VGRKCKJSn+0JTOpoQBU95kdp30ZH1QGZap+tkplRkld/7OS6EqC+jBCAiWBg==}
     dependencies:
       '@kitql/helpers': 0.8.9
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3)
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.52
+      houdini: 1.2.54
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -2387,6 +2387,37 @@ packages:
 
   /houdini@1.2.52:
     resolution: {integrity: sha512-g3BXNx1VnijBuFLPyhzOcg5waf9GxwrFXIl2/jivLz2RP0B5gTG1FcQMGZqbNqcf7rKNHkqdOMxeg7t7QvubQw==}
+    hasBin: true
+    dependencies:
+      '@babel/parser': 7.25.3
+      '@clack/prompts': 0.6.3
+      '@graphql-tools/merge': 9.0.4(graphql@15.9.0)
+      '@graphql-tools/schema': 9.0.19(graphql@15.9.0)
+      '@kitql/helpers': 0.8.9
+      '@types/estree': 1.0.5
+      '@types/fs-extra': 9.0.13
+      '@types/micromatch': 4.0.9
+      '@ungap/structured-clone': 1.2.0
+      '@whatwg-node/server': 0.9.46
+      ast-types: 0.16.1
+      commander: 9.5.0
+      deepmerge: 4.3.1
+      estree-walker: 3.0.3
+      fs-extra: 10.1.0
+      glob: 8.1.0
+      graphql: 15.9.0
+      graphql-yoga: 4.0.5(graphql@15.9.0)
+      memfs: 3.5.3
+      micromatch: 4.0.7
+      minimatch: 5.1.6
+      node-fetch: 3.3.2
+      npx-import: 1.1.4
+      recast: 0.23.9
+      vite-plugin-watch-and-run: 1.7.0
+    dev: true
+
+  /houdini@1.2.54:
+    resolution: {integrity: sha512-4162GdFb/nNpzQBQnpEP/Zn+4I2wUyXsjwPM0qamFKkkD656YU6kXM1MjqGY4d+USiOqLCXW+CXEVts7Rk+hYA==}
     hasBin: true
     dependencies:
       '@babel/parser': 7.25.3
@@ -3262,6 +3293,10 @@ packages:
 
   /set-cookie-parser@2.6.0:
     resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
+    dev: true
+
+  /set-cookie-parser@2.7.0:
+    resolution: {integrity: sha512-lXLOiqpkUumhRdFF3k1osNXCy9akgx/dyPZ5p8qAg9seJzXr5ZrlqZuWIMuY6ejOsVLE6flJ5/h3lsn57fQ/PQ==}
     dev: true
 
   /shebang-command@2.0.0:
