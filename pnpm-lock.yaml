@@ -52,7 +52,7 @@ devDependencies:
     version: 1.2.52
   houdini-svelte:
     specifier: ^1.2.47
-    version: 1.2.54
+    version: 1.2.56
   marked:
     specifier: ^13.0.0
     version: 13.0.3
@@ -123,8 +123,25 @@ packages:
       '@babel/types': 7.25.2
     dev: true
 
+  /@babel/parser@7.25.4:
+    resolution: {integrity: sha512-nq+eWrOgdtu3jG5Os4TQP3x3cLA8hR8TvJNjD8vnPa20WGycimcparWnLK4jJhElTK6SDyuJo1weMKO/5LpmLA==}
+    engines: {node: '>=6.0.0'}
+    hasBin: true
+    dependencies:
+      '@babel/types': 7.25.4
+    dev: true
+
   /@babel/types@7.25.2:
     resolution: {integrity: sha512-YTnYtra7W9e6/oAZEHj0bJehPRUlLH9/fbpT5LfB0NhQXyALCRkRs3zH9v07IYhkgpqX6Z78FnuccZr/l4Fs4Q==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-string-parser': 7.24.8
+      '@babel/helper-validator-identifier': 7.24.7
+      to-fast-properties: 2.0.0
+    dev: true
+
+  /@babel/types@7.25.4:
+    resolution: {integrity: sha512-zQ1ijeeCXVEh+aNL0RlmkPkG8HUiDcU2pzQQFjtbntgAczRASFzj4H+6+bV+dy1ntKR14I/DypeuRG1uma98iQ==}
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/helper-string-parser': 7.24.8
@@ -662,6 +679,17 @@ packages:
       tslib: 2.6.3
     dev: true
 
+  /@graphql-tools/merge@9.0.6(graphql@15.9.0):
+    resolution: {integrity: sha512-TmkzFTFVieHnqu9mPTF6RxAQltaprpDQnM5HMTPSyMLXnJGMTvdWejV0yORKj7DW1YSi791/sUnKf8HytepBFQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@graphql-tools/utils': 10.5.4(graphql@15.9.0)
+      graphql: 15.9.0
+      tslib: 2.6.3
+    dev: true
+
   /@graphql-tools/schema@10.0.4(graphql@15.9.0):
     resolution: {integrity: sha512-HuIwqbKxPaJujox25Ra4qwz0uQzlpsaBOzO6CVfzB/MemZdd+Gib8AIvfhQArK0YIN40aDran/yi+E5Xf0mQww==}
     engines: {node: '>=16.0.0'}
@@ -695,6 +723,19 @@ packages:
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@15.9.0)
       cross-inspect: 1.0.0
+      dset: 3.1.3
+      graphql: 15.9.0
+      tslib: 2.6.3
+    dev: true
+
+  /@graphql-tools/utils@10.5.4(graphql@15.9.0):
+    resolution: {integrity: sha512-XHnyCWSlg1ccsD8s0y6ugo5GZ5TpkTiFVNPSYms5G0s6Z/xTuSmiLBfeqgkfaCwLmLaQnRCmNDL2JRnqc2R5bQ==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+    dependencies:
+      '@graphql-typed-document-node/core': 3.2.0(graphql@15.9.0)
+      cross-inspect: 1.0.1
       dset: 3.1.3
       graphql: 15.9.0
       tslib: 2.6.3
@@ -1365,8 +1406,26 @@ packages:
       urlpattern-polyfill: 10.0.0
     dev: true
 
+  /@whatwg-node/fetch@0.9.21:
+    resolution: {integrity: sha512-Wt0jPb+04JjobK0pAAN7mEHxVHcGA9HoP3OyCsZtyAecNQeADXCZ1MihFwVwjsgaRYuGVmNlsCmLxlG6mor8Gw==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@whatwg-node/node-fetch': 0.5.25
+      urlpattern-polyfill: 10.0.0
+    dev: true
+
   /@whatwg-node/node-fetch@0.5.20:
     resolution: {integrity: sha512-DFLsOG//CrDdIO0x7Q7Ompxj3TZhB4iMDeXpQKY4toSbIbzsKmbwyOkzXMwvV1syxvAtPoHBzyGGtDrPV424FA==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@kamilkisiela/fast-url-parser': 1.1.4
+      busboy: 1.6.0
+      fast-querystring: 1.1.2
+      tslib: 2.6.3
+    dev: true
+
+  /@whatwg-node/node-fetch@0.5.25:
+    resolution: {integrity: sha512-m6TrxcJlS8ptYLTQL+Ex931RFJsoCQtBQWBNHi5b0xHS0C7FJGUJl1asYZ7MdOhZqdiMVcs1lNJeHsfzyUNjOg==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@kamilkisiela/fast-url-parser': 1.1.4
@@ -1380,6 +1439,14 @@ packages:
     engines: {node: '>=18.0.0'}
     dependencies:
       '@whatwg-node/fetch': 0.9.19
+      tslib: 2.6.3
+    dev: true
+
+  /@whatwg-node/server@0.9.49:
+    resolution: {integrity: sha512-3KzLXw80gWnTsQ746G/LFdCThTPfDodjQs4PnmoNuPa6XUOl4HWq8TlJpxtmnEEB+y+UYLal+3VQ68dtYlbUDQ==}
+    engines: {node: '>=18.0.0'}
+    dependencies:
+      '@whatwg-node/fetch': 0.9.21
       tslib: 2.6.3
     dev: true
 
@@ -1654,6 +1721,13 @@ packages:
 
   /cross-inspect@1.0.0:
     resolution: {integrity: sha512-4PFfn4b5ZN6FMNGSZlyb7wUhuN8wvj8t/VQHZdM4JsDcruGJ8L2kf9zao98QIrBPFCpdk27qst/AGTl7pL3ypQ==}
+    engines: {node: '>=16.0.0'}
+    dependencies:
+      tslib: 2.6.3
+    dev: true
+
+  /cross-inspect@1.0.1:
+    resolution: {integrity: sha512-Pcw1JTvZLSJH83iiGWt6fRcT+BjZlCDRVwYLbUcHzv/CRpB7r0MlSrGbIyQvVSNyGnbt7G4AXuyCiDR3POvZ1A==}
     engines: {node: '>=16.0.0'}
     dependencies:
       tslib: 2.6.3
@@ -2360,15 +2434,15 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /houdini-svelte@1.2.54:
-    resolution: {integrity: sha512-+kMCXlaWz2NSkE2z1HzE3byNI1VGRKCKJSn+0JTOpoQBU95kdp30ZH1QGZap+tkplRkld/7OS6EqC+jBCAiWBg==}
+  /houdini-svelte@1.2.56:
+    resolution: {integrity: sha512-t2eDPcMXstdTMv694KukZgmhJHy5WrB2dFZyVFMXaWHNT3ETtMFG99Mg0HXdxzSFzaiWXJnZIHneKdJ/bSZPaA==}
     dependencies:
       '@kitql/helpers': 0.8.9
       '@sveltejs/kit': 1.30.4(svelte@3.59.2)(vite@4.5.3)
       ast-types: 0.16.1
       estree-walker: 3.0.3
       graphql: 15.9.0
-      houdini: 1.2.54
+      houdini: 1.2.56
       recast: 0.23.9
       rollup: 3.29.4
       svelte: 3.59.2
@@ -2415,20 +2489,20 @@ packages:
       vite-plugin-watch-and-run: 1.7.0
     dev: true
 
-  /houdini@1.2.54:
-    resolution: {integrity: sha512-4162GdFb/nNpzQBQnpEP/Zn+4I2wUyXsjwPM0qamFKkkD656YU6kXM1MjqGY4d+USiOqLCXW+CXEVts7Rk+hYA==}
+  /houdini@1.2.56:
+    resolution: {integrity: sha512-AqYuXuuCQMrkpePhNjZHnmUeIi8iOPBHOq7WmmNR1fmUhPhSFQAXOzI8EFCwwDB4h8W393pVSzH7bOZsx8h0Iw==}
     hasBin: true
     dependencies:
-      '@babel/parser': 7.25.3
+      '@babel/parser': 7.25.4
       '@clack/prompts': 0.6.3
-      '@graphql-tools/merge': 9.0.4(graphql@15.9.0)
+      '@graphql-tools/merge': 9.0.6(graphql@15.9.0)
       '@graphql-tools/schema': 9.0.19(graphql@15.9.0)
       '@kitql/helpers': 0.8.9
       '@types/estree': 1.0.5
       '@types/fs-extra': 9.0.13
       '@types/micromatch': 4.0.9
       '@ungap/structured-clone': 1.2.0
-      '@whatwg-node/server': 0.9.46
+      '@whatwg-node/server': 0.9.49
       ast-types: 0.16.1
       commander: 9.5.0
       deepmerge: 4.3.1
@@ -2438,7 +2512,7 @@ packages:
       graphql: 15.9.0
       graphql-yoga: 4.0.5(graphql@15.9.0)
       memfs: 3.5.3
-      micromatch: 4.0.7
+      micromatch: 4.0.8
       minimatch: 5.1.6
       node-fetch: 3.3.2
       npx-import: 1.1.4
@@ -2700,6 +2774,14 @@ packages:
 
   /micromatch@4.0.7:
     resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
+    engines: {node: '>=8.6'}
+    dependencies:
+      braces: 3.0.3
+      picomatch: 2.3.1
+    dev: true
+
+  /micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
     dependencies:
       braces: 3.0.3
